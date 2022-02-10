@@ -15,6 +15,11 @@ const Home: NextPage = () => {
       <main className={styles.main}>
         <h1 className={styles.title}>Welcome to NextJS</h1>
 
+        <p>
+          Port fetched from environment variables:
+          {process.env.NEXT_PUBLIC_GREETING}
+        </p>
+
         <p className={styles.description}>Welcome to NextJS empty project.</p>
       </main>
 
